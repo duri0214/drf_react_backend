@@ -1,0 +1,30 @@
+[
+  {
+    "model": "daily_report.evaluation",
+    "pk": 1,
+    "fields": {
+      "evaluation": "perfect"
+    }
+  },
+  {
+    "model": "daily_report.evaluation",
+    "pk": 2,
+    "fields": {
+      "evaluation": "good"
+    }
+  },
+  {
+    "model": "daily_report.evaluation",
+    "pk": 3,
+    "fields": {
+      "evaluation": "soso"
+    }
+  },
+  {
+    "model": "daily_report.evaluation",
+    "pk": 4,
+    "fields": {
+      "evaluation": "bad"
+    }
+  }
+]

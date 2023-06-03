@@ -1,0 +1,77 @@
+[
+  {
+    "model": "daily_report.daily",
+    "pk": 1,
+    "fields": {
+      "date": "2023-05-01",
+      "univ": "大学の課題1",
+      "study": "勉強したこと1",
+      "other": "その他1",
+      "first_meet": "初めて知ったこと1",
+      "wanna_do": "やりたいこと1",
+      "summary": "1日のまとめ1",
+      "evaluation": 1,
+      "isOpen": true
+    }
+  },
+  {
+    "model": "daily_report.daily",
+    "pk": 2,
+    "fields": {
+      "date": "2023-05-02",
+      "univ": "大学の課題2",
+      "study": "勉強したこと2",
+      "other": "その他2",
+      "first_meet": "初めて知ったこと2",
+      "wanna_do": "やりたいこと2",
+      "summary": "1日のまとめ2",
+      "evaluation": 3,
+      "isOpen": true
+    }
+  },
+  {
+    "model": "daily_report.daily",
+    "pk": 3,
+    "fields": {
+      "date": "2023-05-03",
+      "univ": "大学の課題3",
+      "study": "勉強したこと3",
+      "other": "その他3",
+      "first_meet": "初めて知ったこと3",
+      "wanna_do": "やりたいこと3",
+      "summary": "1日のまとめ3",
+      "evaluation": 2,
+      "isOpen": true
+    }
+  },
+  {
+    "model": "daily_report.daily",
+    "pk": 4,
+    "fields": {
+      "date": "2023-05-04",
+      "univ": "大学の課題4",
+      "study": "勉強したこと4",
+      "other": "その他4",
+      "first_meet": "初めて知ったこと4",
+      "wanna_do": "やりたいこと4",
+      "summary": "1日のまとめ4",
+      "evaluation": 1,
+      "isOpen": true
+    }
+  },
+  {
+    "model": "daily_report.daily",
+    "pk": 5,
+    "fields": {
+      "date": "2023-05-05",
+      "univ": "大学の課題5",
+      "study": "勉強したこと5",
+      "other": "その他5",
+      "first_meet": "初めて知ったこと5",
+      "wanna_do": "やりたいこと5",
+      "summary": "1日のまとめ5",
+      "evaluation": 1,
+      "isOpen": true
+    }
+  }
+]
