@@ -20,19 +20,4 @@ class DailyDetailSerializer(serializers.ModelSerializer):
     """
     class Meta:
         model = Daily
-        fields = ('id', 'date', 'study', 'other', 'first_meet', 'wanna_do', 'summary')
-
-
-class DailyCategorySerializer(serializers.ModelSerializer):
-    """
-    カテゴリ別の一覧用シリアライザ
-    """
-    content = serializers.SerializerMethodField()
-
-    class Meta:
-        model = Daily
-        fields = ('date', 'content')
-
-    def get_content(self, instance):
-        category = self.context.get('category')
-        return instance[category]
+        fields = ('id', 'univ', 'date', 'study', 'other', 'first_meet', 'wanna_do', 'summary')

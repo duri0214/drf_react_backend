@@ -1,7 +1,7 @@
 from rest_framework import generics
 
 from .models import Daily
-from .serializers import DailyListSerializer, DailyDetailSerializer, DailyCategorySerializer
+from .serializers import DailyListSerializer, DailyDetailSerializer
 
 
 class DailyList(generics.ListAPIView):
@@ -19,20 +19,3 @@ class DailyDetail(generics.RetrieveAPIView):
     """
     queryset = Daily.objects.all()
     serializer_class = DailyDetailSerializer
-
-
-class DailyCategory(generics.ListAPIView):
-    """
-    カテゴリ別の一覧
-    例えば category に `univ` が入っていたら date, univ の field を返す
-    """
-    serializer_class = DailyCategorySerializer
-
-    def get_queryset(self):
-        category = self.kwargs['category']
-        return Daily.objects.filter(isOpen=True).values('date', category).order_by('-date')
-
-    def get_serializer_context(self):
-        context = super().get_serializer_context()
-        context['category'] = self.kwargs['category']
-        return context
