@@ -23,13 +23,9 @@ class DailyDetail(generics.RetrieveAPIView):
     queryset = Daily.objects.all()
     serializer_class = DailyDetailSerializer
 
-    def get_object(self):
-        queryset = self.get_queryset()
-        return get_object_or_404(queryset, pk=self.kwargs['pk'])
-
     def get(self, request, *args, **kwargs):
         try:
-            instance = self.get_object()
+            instance = get_object_or_404(self.get_queryset(), pk=self.kwargs['pk'])
             serializer = self.get_serializer(instance)
             return Response(serializer.data)
         except Http404:
