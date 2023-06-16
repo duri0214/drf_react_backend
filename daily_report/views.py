@@ -33,4 +33,4 @@ class DailyDetail(generics.RetrieveAPIView):
             serializer = self.get_serializer(instance)
             return Response(serializer.data)
         except Http404:
-            return Response("404 Not Found", status=status.HTTP_404_NOT_FOUND)
+            return Response(status=status.HTTP_404_NOT_FOUND)
